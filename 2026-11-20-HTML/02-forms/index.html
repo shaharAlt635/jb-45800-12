@@ -1,0 +1,143 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <!-- this is a form to collect data from the user -->
+        <h1>sign up form</h1>
+        <!-- in the form tag i will instruct the browser where to send the 
+        information, and how, using the attributes action and method -->
+
+        <!-- a GET request to the server, sends the form data in the URL line
+        after the `?` sign, in a structure like:
+        name1=value1&name2=value2&name3=value3......&namen=valuen -->
+        
+        <form action="/" method="GET" >
+            <!-- the basic input tag -->
+            <input />
+            <br/>
+            <br/>
+
+            <!-- we can use a placeholder to hint the user what data they are expected to feed -->
+            <input placeholder="please enter your name..." />
+            <br/>
+            <br/>
+
+            <!-- once we used spans as labels... -->
+            <span>enter your last name (span):</span>
+            <br/>
+            <input />
+            <br/>
+            <br/>
+
+            <!-- but then HTML added a special label tag which i can connect to an input tag -->
+            <label for="last-name">enter your last name (label):</label>
+            <br/>
+            <input id="last-name" name="last-name"/>
+            <br/>
+            <br/>
+            
+            <!-- so in modern apps, you will use either:
+            1. placeholder
+            2. label -->
+
+            <!-- input field has type attribute, which tells the browser
+            what is the type of data that user can feed 
+            if i don't mention type, then default is "text" -->
+
+            <input type="text" />
+            <br/>
+            <br/>
+
+            <!-- numbers -->
+            <input 
+                type="number" 
+                placeholder="how old are you?" 
+                step="10" 
+                min="18" 
+                max="40"
+                name="age"
+            />
+            <br/>
+            <br/>
+
+            <!-- passwords -->
+            <input type="password" placeholder="choose a password"/>
+            <br/>
+            <br/>
+
+            <!-- email -->
+            <input type="email" placeholder="your email" name="email"/>
+            <br/>
+            <br/>
+
+            <!-- color -->
+            <input type="color" placeholder="choose color" />
+            <br/>
+            <br/>
+
+            <!-- date -->
+            <input placeholder="your birth date" type="date" />
+            <br/>
+            <br/>
+
+            <!-- time -->
+            <input placeholder="your preferred meeting hour" type="time" />
+            <br/>
+            <br/>
+
+            <!-- date & time -->
+            <input type="datetime-local" />
+            <br/>
+            <br/>
+
+            <!-- selection -->
+            <select name="country">
+                <!-- in select, we will usualy use the first
+                option for user instructions -->
+                <option value="" disabled selected>please select country...</option>
+                <option value="ISR">Israel</option>
+                <option value="HUN">Hungary</option>
+                <option value="SWE">Sweden</option>
+                <option value="COD">Congo, Democratic Republic of</option>
+                <option value="IFA">Iran, Islamic Republic of</option>
+            </select>
+            <br/>
+            <br/>
+
+            <!-- checkbox for getting boolean (yes/no) data -->
+            <input id="newsletter" type="checkbox" />
+            <label for="newsletter">receive weekly newsletter</label>
+            <br/>
+            <br/>
+
+            <input id="agree" type="checkbox" />
+            <label for="agree">agree to terms of service</label>
+            <br/>
+            <br/>
+
+            <!-- radio button (single choice)-->
+             <!-- in order for this to work, all radio input elements
+             must have the same value for `name` property -->
+            <input type="radio" name="age-group" value="c"><label>child</label>
+            <input type="radio" name="age-group" value="y"><label>youth</label>
+            <input type="radio" name="age-group" value="a"><label>adult</label>
+            <input type="radio" name="age-group" value="s"><label>senior</label>
+            <br/>
+            <br/>
+            
+            <!-- the original way to add a submit button -->
+            <input type="submit" value="Sign Up"/>
+            <br/>
+            <br/>
+
+            <input type="reset" value="clear form" />
+            <br/>
+            <br/>
+
+            <!-- current way, simply add a button to a form -->
+            <button>Sign Up</button>
+
+        </form>
+    </body>
+</html>
