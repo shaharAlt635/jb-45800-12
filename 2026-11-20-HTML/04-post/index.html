@@ -1,0 +1,32 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>sign up</h1>
+        <form action="https://httpbin.org/post" method="POST">
+            <input placeholder="choose a username" name="username"/>
+            <br/>
+            <br/>
+            <input type="password" placeholder="choose a password" name="password" />
+            <br/>
+            <br/>
+            <textarea placeholder="tell us about yourself" name="about"></textarea>
+            <br/>
+            <br/>
+            <button>Sign up</button>
+        </form>
+    </body>
+</html>
+
+<!-- drawbacks of GET submission method:
+- all the data is visible in the URL line in the browser
+- data is limited in length -->
+
+
+<!-- when we have large amount of data
+or when we have sensitive data
+we will send the information to the server
+using a POST method.
+the data will be sent, but not seen in the URL line -->
+
