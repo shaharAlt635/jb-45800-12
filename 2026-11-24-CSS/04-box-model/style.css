@@ -1,0 +1,15 @@
+div {
+    background-color: lightblue;
+    width: 300px;
+    height: 150px;
+    overflow: hidden;
+    border: 20px solid lightcoral;
+    padding: 30px;
+    /* box-sizing: content-box; */
+    box-sizing: border-box;
+}
+
+/* when box-sizing is content-box, the width property
+applies only to the div content. if we add padding
+and/or border, they will be added ON TOP of the width
+we specified */
