@@ -1,0 +1,30 @@
+/* basic hierarchy */
+/* h2 {
+   color: blue; 
+}
+
+h2 {
+    color: red;
+} */
+
+/* intro to specificity */
+/* li h2 {
+    color: blue;
+}
+
+h2 {
+    color: red;
+} */
+
+/* body div div ul li h2 {
+    color: red;
+} */
+
+#container h2 {
+    color: blue !important;
+}
+
+.my-class li h2 {
+    color: red !important;
+}
+
