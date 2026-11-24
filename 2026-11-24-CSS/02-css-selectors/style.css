@@ -27,3 +27,40 @@ p {
 .sad {
    font-size: xx-small; 
 }
+
+/* id selector */
+#my-div {
+    padding: 30px;
+}
+
+/* attribute selector */
+input[type=number] {
+    background-color: lightseagreen;
+}
+
+/* pseudo selector */
+
+/* when i have a single colon : it is called pseudo class */
+a:hover {
+    cursor: grab;
+    font-size: x-small;
+}
+
+/* when i have double colons (::) it is called a pseudo element */
+p::first-letter {
+    font-size: xx-large;
+    color: white;   
+}
+
+/* combining selectors */
+form p {
+    color: black;
+}
+
+form > p {
+    background-color: blueviolet;
+}
+
+#my-div2 > p:nth-child(3) {
+    color: yellow;
+}
