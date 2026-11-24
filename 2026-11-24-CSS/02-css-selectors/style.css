@@ -1,0 +1,19 @@
+/* CSS Selectors */
+
+/* name selector - the selector is a tag name */
+body {
+    background-color: #f08080;
+}
+
+div {
+    background-color: lightgreen;
+}
+
+a {
+    font-size: xx-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p { 
+    color: red; 
+}
