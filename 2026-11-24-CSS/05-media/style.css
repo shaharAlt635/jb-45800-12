@@ -1,0 +1,26 @@
+h1 {
+    color: red;
+    font-size: small;
+}
+
+p {
+    color: blue;
+    text-decoration: underline;
+    height: 50px;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        color: green;
+        font-size: xx-large;
+    }
+
+    p {
+        text-decoration: line-through;
+        
+    }
+
+    #micky {
+        display: none;
+    }
+}
