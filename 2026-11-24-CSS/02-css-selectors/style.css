@@ -17,3 +17,13 @@ a {
 p { 
     color: red; 
 }
+
+/* class selectors */
+.happy {
+    color: yellow;
+    background-color: blue;
+}
+
+.sad {
+   font-size: xx-small; 
+}
