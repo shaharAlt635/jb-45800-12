@@ -1,0 +1,9 @@
+p {
+    color: yellow;
+    background-color: blue;
+    text-decoration: dotted;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+}
